@@ -36,3 +36,11 @@ h1 b { display:grid; place-items:center; width:clamp(3.2rem,7vw,5rem); height:cl
 
 @media (max-width:680px) { .opening { background-position:54% center; } .lyrics { min-height:18rem; } h1 { flex-direction:column; gap:.4rem; } h1 b { margin:-.3rem 0; } .sticker--blue { left:auto; right:8%; top:10%; } .invitation { padding-block:7rem; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-delay:0ms!important; } .more { opacity:1; transform:none; } }
+
+/* Softer invitation typography */
+h1 { display:block; white-space:nowrap; font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive; font-size:clamp(2.15rem,8.2vw,6.5rem); font-weight:600; letter-spacing:-.07em; }
+h1 b { display:inline; width:auto; height:auto; margin:0 .14em; border:0; background:transparent; box-shadow:none; color:#e94f8b; font:inherit; font-size:.82em; }
+.message { border:0; border-radius:34px; background:rgba(255,250,243,.82); box-shadow:0 16px 45px rgba(63,55,87,.12),7px 7px 0 rgba(115,200,255,.75); }
+.message p { font-family:Arial,Helvetica,sans-serif; font-size:clamp(1rem,2.1vw,1.2rem); line-height:1.65; }
+.signature { color:#e94f8b; }
+@media(max-width:680px) { h1 { white-space:nowrap; font-size:clamp(2rem,10vw,3.4rem); } h1 b { margin:0 .08em; } }
