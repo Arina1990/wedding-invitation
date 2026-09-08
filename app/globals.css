@@ -57,8 +57,8 @@ h1 b { display:inline; width:auto; height:auto; margin:0 .14em; border:0; backgr
 .sticker--blue { transform:rotate(4deg); }
 .sticker--yellow { transform:rotate(-3deg); }
 .date-line { margin:0 0 clamp(1.5rem,4vw,2.5rem); }
-h1 { width:100%; margin:0 auto; padding:0 1rem; text-align:center; font-family:'Marck Script',cursive; font-size:clamp(3.2rem,8vw,7rem); font-weight:400; line-height:1.15; letter-spacing:0; }
+h1 { width:100%; margin:0 auto; padding:0 1rem; text-align:center; font-family:'Caveat',cursive; font-size:clamp(3.2rem,8vw,7rem); font-weight:600; line-height:1.15; letter-spacing:0; }
 h1 b { color:#e94f8b; font-family:inherit; font-weight:400; font-size:.7em; }
 .message { margin-top:clamp(2.2rem,5vw,3.5rem); }
-.signature { margin-top:clamp(2rem,5vw,3rem); font-family:'Marck Script',cursive; font-size:clamp(1.7rem,3.5vw,2.4rem); font-weight:400; }
+.signature { margin-top:clamp(2rem,5vw,3rem); font-family:'Caveat',cursive; font-size:clamp(1.7rem,3.5vw,2.4rem); font-weight:600; }
 @media(max-width:680px) { .invitation { min-height:auto; padding:5rem 1.1rem 5.5rem; } .sticker-row { margin-bottom:2.8rem; } h1 { white-space:nowrap; font-size:clamp(2.7rem,13vw,4rem); } .message { width:min(100%,34rem); margin-top:2.7rem; padding:1.6rem 1.25rem; } .signature { margin-top:2.5rem; } }
