@@ -35,11 +35,13 @@ export default function Home() {
       </section>
 
       <section className="invitation" id="invitation" aria-label="Приглашение">
-        <div className="sticker sticker--pink">save</div>
-        <div className="sticker sticker--blue">the</div>
-        <div className="sticker sticker--yellow">date!</div>
+        <div className="sticker-row" aria-label="Save the date">
+          <span className="sticker sticker--pink">save</span>
+          <span className="sticker sticker--blue">the</span>
+          <span className="sticker sticker--yellow">date!</span>
+        </div>
         <p className="date-line"><span>13</span> / 08 / 2027</p>
-        <h1>Арина <b>&amp;</b> Дмитрий</h1>
+        <h1>Арина <b>и</b> Дима</h1>
         <div className="message">
           <p>Мы очень хотим, чтобы в этот день вы были рядом с нами.</p>
           <p>13 августа 2027 года мы отметим важное событие. Уже сейчас приглашаем вас разделить его вместе с нами.</p>
