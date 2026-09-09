@@ -26,20 +26,31 @@
       radial-gradient(circle at 3% 96%,#ffd34d 0 6rem,transparent 6.1rem);
       opacity:.68;z-index:-1}
     .story{position:relative;z-index:1;width:min(920px,100%);margin:auto;text-align:center}
-    .story-title{margin:0 0 clamp(1.2rem,3vw,2rem);color:#e94f8b;font-family:Caveat,cursive;font-size:clamp(3rem,7vw,5.4rem);font-weight:600;line-height:1}
+    .save-title{display:flex;align-items:center;justify-content:center;gap:.6rem;margin:0 0 .7rem;font-family:'Arial Black',Arial,sans-serif;font-size:clamp(1rem,2.5vw,1.55rem);text-transform:uppercase;letter-spacing:.04em}
+    .save-title span{display:inline-block;padding:.45rem .8rem;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink)}
+    .save-title span:nth-child(1){background:var(--pink);transform:rotate(-5deg)}
+    .save-title span:nth-child(2){background:var(--blue);transform:rotate(3deg)}
+    .save-title span:nth-child(3){background:var(--yellow);transform:rotate(-3deg)}
+    .story-date{margin:0 0 clamp(1.5rem,3vw,2.2rem);color:#e94f8b;font-family:Caveat,cursive;font-size:clamp(2.5rem,6vw,4.4rem);font-weight:600;line-height:1}
     .photos{display:flex;align-items:center;justify-content:center;width:min(760px,96%);margin:0 auto clamp(1.8rem,4vw,3rem)}
-    .photo-card{position:relative;width:min(42vw,330px);margin:0;padding:clamp(.45rem,1vw,.75rem);background:#fff;box-shadow:0 14px 32px #3c234526;opacity:0}
+    .photo-card{position:relative;width:min(44vw,370px);margin:0;padding:clamp(.45rem,1vw,.75rem);background:#fff;box-shadow:0 14px 32px #3c234526;opacity:0}
     .photo-card:first-child{z-index:1;transform:translate(-34vw,35px) rotate(-6deg)}
     .photo-card:last-child{z-index:2;margin-left:clamp(-2.2rem,-3vw,-1rem);transform:translate(34vw,35px) rotate(6deg)}
-    .photo-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
-    .photo-card:first-child img{object-position:center 42%}
-    .photo-card:last-child img{object-position:center 48%}
+    .photo-window{overflow:hidden;aspect-ratio:4/5}
+    .photo-card img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.16)}
+    .photo-card:first-child img{object-position:center 38%}
+    .photo-card:last-child img{object-position:center 48%;transform:scale(1.27)}
     .photo-card:before{content:"";position:absolute;top:-.7rem;left:50%;width:34%;height:1.75rem;transform:translateX(-50%) rotate(-2deg);background:#ff78abd9}
     .photo-card:last-child:before{background:#73c8ffe6;transform:translateX(-50%) rotate(3deg)}
     .story-copy{width:min(720px,100%);margin:auto;padding:clamp(1.5rem,4vw,2.6rem);border-radius:30px;background:#fffdf8e8;box-shadow:0 18px 45px #54233f14;opacity:0;transform:translateY(24px)}
     .story-copy p{margin:0 0 .55rem;color:#651c3d;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.05rem,2.25vw,1.38rem);line-height:1.55}
     .story-copy p:last-child{margin-bottom:0}
     .story-signature{margin:clamp(1.5rem,3vw,2.2rem) 0 0;color:#e94f8b;font-family:Caveat,cursive;font-size:clamp(2.2rem,5vw,3.4rem);font-weight:600;opacity:0;transform:translateY(18px)}
+    .doodle{position:absolute;z-index:-1;font-family:Caveat,cursive;font-weight:600;line-height:1;user-select:none;pointer-events:none}
+    .doodle--heart{left:4%;top:27%;color:var(--pink);font-size:clamp(3rem,6vw,5rem);transform:rotate(-12deg)}
+    .doodle--star{right:4%;top:35%;color:#319edb;font-size:clamp(3rem,7vw,5.5rem);transform:rotate(11deg)}
+    .doodle--sun{left:7%;bottom:19%;color:#f0b900;font-size:clamp(2.8rem,6vw,5rem)}
+    .doodle--spark{right:7%;bottom:17%;color:var(--pink);font-size:clamp(2.6rem,5vw,4.4rem);transform:rotate(8deg)}
     .invitation.is-visible .photo-card:first-child{animation:girl-in .9s .25s cubic-bezier(.2,.85,.25,1) forwards}
     .invitation.is-visible .photo-card:last-child{animation:boy-in .9s 1.15s cubic-bezier(.2,.85,.25,1) forwards}
     .invitation.is-visible .story-copy{animation:soft-in .8s 2.05s ease-out forwards}
@@ -51,11 +62,14 @@
       .opening{min-height:100svh}
       .lyrics{min-height:22rem}
       .invitation{padding:4.25rem .9rem 4rem}
-      .story-title{margin-bottom:1.4rem}
+      .save-title{gap:.35rem}
+      .save-title span{padding:.35rem .55rem}
+      .story-date{margin-bottom:1.4rem}
       .photos{width:100%;margin-bottom:1.6rem}
       .photo-card{width:47vw;max-width:250px;padding:.42rem}
       .photo-card:last-child{margin-left:-1.25rem}
-      .photo-card img{aspect-ratio:3/4}
+      .photo-window{aspect-ratio:3/4}
+      .doodle--heart{left:-.2rem;top:25%}.doodle--star{right:-.1rem;top:37%}
       .story-copy{padding:1.45rem 1.05rem;border-radius:24px}
       .story-copy p{font-size:clamp(1rem,4.6vw,1.18rem);line-height:1.5}
     }
@@ -74,10 +88,15 @@
     </section>
     <section class="invitation" id="invitation" aria-label="Сохраните дату">
       <div class="story">
-        <h1 class="story-title">Узнали нас?</h1>
+        <div class="save-title" aria-label="Save the date"><span>save</span><span>the</span><span>date!</span></div>
+        <p class="story-date">13.08.2027</p>
+        <span class="doodle doodle--heart" aria-hidden="true">♡</span>
+        <span class="doodle doodle--star" aria-hidden="true">☆</span>
+        <span class="doodle doodle--sun" aria-hidden="true">☼</span>
+        <span class="doodle doodle--spark" aria-hidden="true">✦</span>
         <div class="photos">
-          <figure class="photo-card"><img src="arina-child.jpg" alt="Арина в детстве"></figure>
-          <figure class="photo-card"><img src="dima-child.jpg" alt="Дима в детстве с игрушками"></figure>
+          <figure class="photo-card"><div class="photo-window"><img src="arina-child.jpg" alt="Арина в детстве"></div></figure>
+          <figure class="photo-card"><div class="photo-window"><img src="dima-child.jpg" alt="Дима в детстве с игрушками"></div></figure>
         </div>
         <div class="story-copy">
           <p>Мы очень хотим, чтобы в этот день вы были рядом с нами.</p>
