@@ -15,4 +15,5 @@ await cp(resolve(root, 'public', 'arina-child.jpg'), resolve(output, 'arina-chil
 await cp(resolve(root, 'public', 'dima-child.jpg'), resolve(output, 'dima-child.jpg'));
 await cp(resolve(root, 'public', 'arina-child-enhanced.png'), resolve(output, 'arina-child-enhanced.png'));
 await cp(resolve(root, 'public', 'dima-child-enhanced.png'), resolve(output, 'dima-child-enhanced.png'));
+await cp(resolve(root, 'public', 'og-invitation.png'), resolve(output, 'og-invitation.png'));
 console.log('Static site built in out/');
