@@ -11,6 +11,57 @@
     :root{--ink:#282438;--paper:#fffaf3;--pink:#ff78ab;--yellow:#ffd95a;--blue:#73c8ff;--coral:#ff7b67}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,Helvetica,sans-serif}button{font:inherit}.opening,.invitation{min-height:100svh;position:relative;display:grid;place-items:center;overflow:hidden;padding:clamp(2rem,7vw,5rem) 1.25rem;background-image:linear-gradient(#fffaf31f,#fffaf31f),url('save-the-date-bg.png');background-size:cover;background-position:center}.opening:after{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,#fffaf333,#fffaf305 60%);pointer-events:none}.opening__copy{position:relative;z-index:1;width:min(780px,100%);text-align:center}.tiny-label{margin:0 0 2.4rem;font-size:.82rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase}.lyrics{min-height:15rem;display:flex;flex-direction:column;justify-content:center}.lyrics p{margin:.28rem 0;opacity:0;transform:translateY(12px);font-family:'Segoe Print','Comic Sans MS',cursive;font-size:clamp(1.25rem,4.2vw,2.7rem);font-weight:600;line-height:1.35;letter-spacing:-.035em;animation:line-in .8s cubic-bezier(.2,.8,.2,1) forwards}.lyrics p:nth-child(1){animation-delay:.5s}.lyrics p:nth-child(2){animation-delay:1.65s}.lyrics p:nth-child(3){animation-delay:2.8s}.lyrics p:nth-child(4){animation-delay:3.95s}@keyframes line-in{to{opacity:1;transform:none}}.more{margin-top:2.25rem;border:2px solid var(--ink);border-radius:999px;padding:.9rem 1.25rem .8rem 1.4rem;color:var(--ink);background:var(--yellow);box-shadow:5px 5px 0 var(--ink);font-size:.85rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;opacity:0;transform:translateY(8px);animation:button-in .5s 5.2s forwards}@keyframes button-in{to{opacity:1;transform:none}}.more:hover{box-shadow:2px 2px 0 var(--ink);transform:translate(3px,3px)}.more span{margin-left:.6rem}.invitation{background-position:center bottom;text-align:center;align-content:center}.invitation:before{content:'';position:absolute;inset:clamp(1rem,3vw,2rem);border:2px solid #2824382e;border-radius:32px;pointer-events:none}.sticker{position:absolute;z-index:1;padding:.55rem 1rem;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);font-family:'Arial Black',Arial,sans-serif;font-size:clamp(1rem,2vw,1.4rem);text-transform:uppercase;transform:rotate(-7deg)}.sticker--pink{left:8%;top:8%;background:var(--pink)}.sticker--blue{left:calc(8% + 4.8rem);top:12%;background:var(--blue);transform:rotate(5deg)}.sticker--yellow{right:8%;bottom:9%;background:var(--yellow);transform:rotate(-4deg)}.date-line{position:relative;z-index:1;margin:0 0 1.3rem;font-weight:900;font-size:clamp(1rem,2.3vw,1.35rem);letter-spacing:.12em}.date-line span{display:inline-grid;place-items:center;width:3.25rem;height:3.25rem;margin-right:.3rem;border-radius:50%;background:var(--coral);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink)}h1{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:clamp(.7rem,2vw,1.6rem);margin:0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.2rem,10vw,8rem);font-weight:400;line-height:.95;letter-spacing:-.06em}h1 b{display:grid;place-items:center;width:clamp(3.2rem,7vw,5rem);height:clamp(3.2rem,7vw,5rem);border-radius:50%;background:var(--pink);border:2px solid var(--ink);font-size:.55em;font-style:italic;box-shadow:4px 4px 0 var(--ink)}.location{position:relative;z-index:1;margin:1.4rem 0 2.2rem;font-size:clamp(1rem,2vw,1.25rem);font-weight:900;letter-spacing:.26em;text-transform:uppercase}.message{position:relative;z-index:1;width:min(650px,92%);margin:auto;padding:clamp(1.4rem,4vw,2.4rem);border:2px solid var(--ink);border-radius:28px;background:#fffaf3e6;box-shadow:8px 8px 0 var(--blue);backdrop-filter:blur(8px)}.message p{margin:0 0 1rem;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.05rem,2.3vw,1.35rem);line-height:1.55}.message p:last-child{margin:0;font-family:Arial,sans-serif;font-weight:900}.signature{position:relative;z-index:1;margin:2rem 0 0;font-family:'Segoe Print','Comic Sans MS',cursive;font-size:clamp(1.1rem,2.6vw,1.55rem);font-weight:600}@media(max-width:680px){.opening{background-position:54% center}.lyrics{min-height:18rem}h1{flex-direction:column;gap:.4rem}h1 b{margin:-.3rem 0}.sticker--blue{left:auto;right:8%;top:10%}.invitation{padding-block:7rem}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-delay:0ms!important}.more{opacity:1;transform:none}}
     h1{display:block;white-space:nowrap;font-family:'Segoe Print','Bradley Hand','Comic Sans MS',cursive;font-size:clamp(2.15rem,8.2vw,6.5rem);font-weight:600;letter-spacing:-.07em}h1 b{display:inline;width:auto;height:auto;margin:0 .14em;border:0;background:transparent;box-shadow:none;color:#e94f8b;font:inherit;font-size:.82em}.message{border:0;border-radius:34px;background:#fffaf3d1;box-shadow:0 16px 45px #3f37571f,7px 7px 0 #73c8ffbf}.message p{font-family:Arial,Helvetica,sans-serif;font-size:clamp(1rem,2.1vw,1.2rem);line-height:1.65}.signature{color:#e94f8b}@media(max-width:680px){h1{white-space:nowrap;font-size:clamp(2rem,10vw,3.4rem)}h1 b{margin:0 .08em}}
     .lyrics p{font-family:'Caveat',cursive;font-size:clamp(1.65rem,4.5vw,3rem);font-weight:600;letter-spacing:0;line-height:1.2}.invitation{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:0;width:100%;padding-block:clamp(5.5rem,10vw,8rem)}.sticker-row{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:.65rem;width:100%;margin:0 0 clamp(2.4rem,6vw,4rem)}.sticker{position:static;display:inline-block;flex:0 0 auto}.sticker--pink{transform:rotate(-6deg)}.sticker--blue{transform:rotate(4deg)}.sticker--yellow{transform:rotate(-3deg)}.date-line{margin:0 0 clamp(1.5rem,4vw,2.5rem)}h1{width:100%;margin:0 auto;padding:0 1rem;text-align:center;font-family:'Caveat',cursive;font-size:clamp(3.2rem,8vw,7rem);font-weight:600;line-height:1.15;letter-spacing:0}h1 b{color:#e94f8b;font-family:inherit;font-weight:600;font-size:.7em}.message{margin-top:clamp(2.2rem,5vw,3.5rem)}.signature{margin-top:clamp(2rem,5vw,3rem);font-family:'Caveat',cursive;font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:600}@media(max-width:680px){.invitation{min-height:auto;padding:5rem 1.1rem 5.5rem}.sticker-row{margin-bottom:2.8rem}h1{white-space:nowrap;font-size:clamp(2.7rem,13vw,4rem)}.message{width:min(100%,34rem);margin-top:2.7rem;padding:1.6rem 1.25rem}.signature{margin-top:2.5rem}}
+    /* Second-screen photo story and slower pacing */
+    .lyrics{min-height:21rem}
+    .lyrics p{animation-duration:1.25s;transform:translateY(18px)}
+    .lyrics p:nth-child(1){animation-delay:.8s}
+    .lyrics p:nth-child(2){animation-delay:2.8s}
+    .lyrics p:nth-child(3){animation-delay:4.8s}
+    .lyrics p:nth-child(4){animation-delay:6.8s}
+    .more{animation-delay:8.7s}
+    .invitation{min-height:100svh;padding:clamp(4.5rem,8vw,7rem) 1.2rem;background:#fffaf1;isolation:isolate}
+    .invitation:before{inset:0;border:0;border-radius:0;background:
+      radial-gradient(circle at 3% 8%,#ff8dbd 0 7rem,transparent 7.1rem),
+      radial-gradient(circle at 97% 10%,#72c8fa 0 7rem,transparent 7.1rem),
+      radial-gradient(circle at 3% 96%,#ffd34d 0 6rem,transparent 6.1rem);
+      opacity:.68;z-index:-1}
+    .story{position:relative;z-index:1;width:min(920px,100%);margin:auto;text-align:center}
+    .story-title{margin:0 0 clamp(1.2rem,3vw,2rem);color:#e94f8b;font-family:Caveat,cursive;font-size:clamp(3rem,7vw,5.4rem);font-weight:600;line-height:1}
+    .photos{display:flex;align-items:center;justify-content:center;width:min(760px,96%);margin:0 auto clamp(1.8rem,4vw,3rem)}
+    .photo-card{position:relative;width:min(42vw,330px);margin:0;padding:clamp(.45rem,1vw,.75rem);background:#fff;box-shadow:0 14px 32px #3c234526;opacity:0}
+    .photo-card:first-child{z-index:1;transform:translate(-34vw,35px) rotate(-6deg)}
+    .photo-card:last-child{z-index:2;margin-left:clamp(-2.2rem,-3vw,-1rem);transform:translate(34vw,35px) rotate(6deg)}
+    .photo-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+    .photo-card:first-child img{object-position:center 42%}
+    .photo-card:last-child img{object-position:center 48%}
+    .photo-card:before{content:"";position:absolute;top:-.7rem;left:50%;width:34%;height:1.75rem;transform:translateX(-50%) rotate(-2deg);background:#ff78abd9}
+    .photo-card:last-child:before{background:#73c8ffe6;transform:translateX(-50%) rotate(3deg)}
+    .story-copy{width:min(720px,100%);margin:auto;padding:clamp(1.5rem,4vw,2.6rem);border-radius:30px;background:#fffdf8e8;box-shadow:0 18px 45px #54233f14;opacity:0;transform:translateY(24px)}
+    .story-copy p{margin:0 0 .55rem;color:#651c3d;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.05rem,2.25vw,1.38rem);line-height:1.55}
+    .story-copy p:last-child{margin-bottom:0}
+    .story-signature{margin:clamp(1.5rem,3vw,2.2rem) 0 0;color:#e94f8b;font-family:Caveat,cursive;font-size:clamp(2.2rem,5vw,3.4rem);font-weight:600;opacity:0;transform:translateY(18px)}
+    .invitation.is-visible .photo-card:first-child{animation:girl-in .9s .25s cubic-bezier(.2,.85,.25,1) forwards}
+    .invitation.is-visible .photo-card:last-child{animation:boy-in .9s 1.15s cubic-bezier(.2,.85,.25,1) forwards}
+    .invitation.is-visible .story-copy{animation:soft-in .8s 2.05s ease-out forwards}
+    .invitation.is-visible .story-signature{animation:soft-in .7s 2.75s ease-out forwards}
+    @keyframes girl-in{to{opacity:1;transform:translate(0,0) rotate(-4deg)}}
+    @keyframes boy-in{to{opacity:1;transform:translate(0,0) rotate(4deg)}}
+    @keyframes soft-in{to{opacity:1;transform:none}}
+    @media(max-width:680px){
+      .opening{min-height:100svh}
+      .lyrics{min-height:22rem}
+      .invitation{padding:4.25rem .9rem 4rem}
+      .story-title{margin-bottom:1.4rem}
+      .photos{width:100%;margin-bottom:1.6rem}
+      .photo-card{width:47vw;max-width:250px;padding:.42rem}
+      .photo-card:last-child{margin-left:-1.25rem}
+      .photo-card img{aspect-ratio:3/4}
+      .story-copy{padding:1.45rem 1.05rem;border-radius:24px}
+      .story-copy p{font-size:clamp(1rem,4.6vw,1.18rem);line-height:1.5}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .photo-card,.story-copy,.story-signature{opacity:1!important;transform:none!important;animation:none!important}
+    }
   </style>
 </head>
 <body>
@@ -21,12 +72,21 @@
         <button class="more" type="button" onclick="document.querySelector('#invitation').scrollIntoView({behavior:'smooth'})">Листать дальше <span aria-hidden="true">↓</span></button>
       </div>
     </section>
-    <section class="invitation" id="invitation" aria-label="Приглашение">
-      <div class="sticker-row" aria-label="Save the date"><span class="sticker sticker--pink">save</span><span class="sticker sticker--blue">the</span><span class="sticker sticker--yellow">date!</span></div>
-      <p class="date-line"><span>13</span> / 08 / 2027</p>
-      <h1>Арина <b>и</b> Дима</h1>
-      <div class="message"><p>Мы очень хотим, чтобы в этот день вы были рядом с нами.</p><p>13 августа 2027 года мы отметим важное событие. Уже сейчас приглашаем вас разделить его вместе с нами.</p><p>Сохраните, пожалуйста, дату, и все подробности совсем скоро вам подскажем.</p></div>
-      <p class="signature">До встречи в августе!</p>
+    <section class="invitation" id="invitation" aria-label="Сохраните дату">
+      <div class="story">
+        <h1 class="story-title">Узнали нас?</h1>
+        <div class="photos">
+          <figure class="photo-card"><img src="arina-child.jpg" alt="Арина в детстве"></figure>
+          <figure class="photo-card"><img src="dima-child.jpg" alt="Дима в детстве с игрушками"></figure>
+        </div>
+        <div class="story-copy">
+          <p>Мы очень хотим, чтобы в этот день вы были рядом с нами.</p>
+          <p>13 августа 2027 года мы отметим важное событие.</p>
+          <p>Пожалуйста, сохраните эту дату.</p>
+          <p>Остальные подробности — совсем скоро.</p>
+        </div>
+        <p class="story-signature">Арина и Дима</p>
+      </div>
     </section>
   </main>
   <script>
@@ -35,6 +95,14 @@
     verse[1].textContent = verse[1].textContent.replace('просто: «', 'просто "').replace('»', '"');
     verse[2].textContent = verse[2].textContent.replace(': «Буду', ' будешь').replace('одета как', 'одета, как').replace('невеста»,', 'невеста');
     verse[3].textContent = verse[3].textContent.replace(/\.$/, '');
+    const invitation = document.querySelector('#invitation');
+    const reveal = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        invitation.classList.add('is-visible');
+        reveal.disconnect();
+      }
+    }, { threshold: 0.28 });
+    reveal.observe(invitation);
   </script>
 </body>
 </html>

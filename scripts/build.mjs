@@ -11,4 +11,6 @@ await cp(resolve(root, 'public', 'save-the-date-bg.png'), resolve(output, 'save-
 await cp(resolve(root, 'public', 'caveat-500.ttf'), resolve(output, 'caveat-500.ttf'));
 await cp(resolve(root, 'public', 'caveat-600.ttf'), resolve(output, 'caveat-600.ttf'));
 await cp(resolve(root, 'public', 'marck-script.ttf'), resolve(output, 'marck-script.ttf'));
+await cp(resolve(root, 'public', 'arina-child.jpg'), resolve(output, 'arina-child.jpg'));
+await cp(resolve(root, 'public', 'dima-child.jpg'), resolve(output, 'dima-child.jpg'));
 console.log('Static site built in out/');
